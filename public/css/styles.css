@@ -46,6 +46,7 @@ footer {
     margin-top: 31px;
     background-image: url(/images/goto.jpg);
     border-color: #000022;
+    border-color: #000022;
     color: #f4f4f5;
     min-height: 127px;
 }
@@ -77,13 +78,13 @@ nav {
 }
 
 .top-spacer {
-    background-color: #494848;
+    background-color: #f7f3f3;
     height: 40px;
 }
 
 a,
 a:hover {
-    color: #505051;
+    color: #404042;
     text-decoration: none;
 }
 
@@ -99,7 +100,7 @@ a:hover {
 
 .navbar-bright {
     background-color: #01010e;
-    color: rgb(81, 78, 78);
+    color: rgb(191, 187, 187);
     margin-bottom: 0;
     border-width: 0;
 }
@@ -177,7 +178,7 @@ a:hover {
     width: 100%;
     opacity: .9;
     padding: 6px;
-    color: rgb(49, 47, 47);
+    color: rgb(204, 204, 204);
 }
 
 .login-page {
@@ -195,13 +196,13 @@ a:hover {
 .login-head {
     margin-top: 7%;
     margin-left: 10%;
-    color: rgb(81, 80, 80);
+    color: rgb(248, 245, 245);
 }
 
 .login-botton {
     width: 100%;
     background-color: #0f0f0f;
-    color: rgb(81, 81, 80);
+    color: rgb(241, 241, 236);
     height: 1.8em;
     border: 1px solid rgb(10, 10, 10);
 }
@@ -228,7 +229,7 @@ form .indicator span {
     position: relative;
     height: 100%;
     width: 100%;
-    background: rgb(14, 13, 13);
+    background: rgb(218, 215, 215);
     border-radius: 5px;
 }
 
@@ -288,6 +289,14 @@ form .text.strong {
     float: left;
     align-content: center;
     text-align: center;
+}
+
+#exampleInputEmail1 {
+    color: black;
+}
+
+#exampleInputPassword1 {
+    color: black;
 }
 
 .bookadd {
