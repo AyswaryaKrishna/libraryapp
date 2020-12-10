@@ -32,6 +32,7 @@ footer {
     min-height: 199px;
     background-image: url(https://static.myfbcover.com/covers/Others/Books.jpg);
     color: #fefeff;
+    background-color: #000044;
 }
 
 #masthead h1 {
@@ -82,7 +83,7 @@ nav {
 
 a,
 a:hover {
-    color: #6b6c6e;
+    color: #505051;
     text-decoration: none;
 }
 
@@ -200,7 +201,7 @@ a:hover {
 .login-botton {
     width: 100%;
     background-color: #0f0f0f;
-    color: rgb(245, 245, 244);
+    color: rgb(81, 81, 80);
     height: 1.8em;
     border: 1px solid rgb(10, 10, 10);
 }
