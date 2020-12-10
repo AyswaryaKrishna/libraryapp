@@ -1,0 +1,347 @@
+/* override bootstrap styles */
+
+@import url('http://fonts.googleapis.com/css?family=Oswald:300,400:latin,latin-ext');
+.navbar-form input,
+.form-inline input {
+    width: auto;
+}
+
+body {
+    padding-top: 50px;
+    color: #646464;
+    background-color: #fcf6f6;
+}
+
+h1,
+h2,
+h3,
+.highlight,
+.navbar a,
+#masthead h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #cecece;
+}
+
+#masthead {
+    min-height: 199px;
+    background-image: url(https://static.myfbcover.com/covers/Others/Books.jpg);
+    color: #aaaacc;
+}
+
+#masthead h1 {
+    font-size: 55px;
+    line-height: 1;
+    color: #474749;
+    margin-top: 10px;
+}
+
+#masthead .well {
+    margin-top: 31px;
+    background-image: url(/images/goto.jpg);
+    border-color: #000022;
+    color: #444447;
+    min-height: 127px;
+}
+
+nav {
+    background-color: black;
+}
+
+
+/* 
+.row {
+    background-color: black;
+} */
+
+#topPanel {
+    padding-top: 0px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+#topPanel .panel-body {
+    padding-top: 0px;
+}
+
+.navbar.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.top-spacer {
+    background-color: #494848;
+    height: 40px;
+}
+
+a,
+a:hover {
+    color: #223344;
+    text-decoration: none;
+}
+
+.icon-bar {
+    background-color: rgb(74, 74, 74);
+}
+
+@media screen and (min-width: 768px) {
+    #masthead h1 {
+        font-size: 80px;
+    }
+}
+
+.navbar-bright {
+    background-color: #01010e;
+    color: rgb(61, 60, 60);
+    margin-bottom: 0;
+    border-width: 0;
+}
+
+.navbar-bright a,
+.navbar-bright .navbar-brand,
+#masthead h4 {
+    color: #3a3a3b;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.navbar-bright li>a:hover {
+    background-color: #36363b;
+}
+
+.dropdown-menu {
+    min-width: 250px;
+}
+
+.caret {
+    color: rgb(51, 50, 50);
+}
+
+.navbar-toggle {
+    color: rgb(74, 73, 73);
+    border-width: 0;
+}
+
+.navbar-toggle:hover {
+    background-color: rgb(61, 60, 60);
+}
+
+.panel {
+    border-color: transparent;
+    border-radius: 0;
+}
+
+.thumbnail {
+    margin-bottom: 8px;
+}
+
+.img-container {
+    overflow: hidden;
+    height: 170px;
+}
+
+.container {
+    background-image: url("https://th.bing.com/th/id/OIP.Zop0CCyPO4j0PQaVJfs6uwHaEo?w=274&h=180&c=7&o=5&dpr=1.56&pid=1.7");
+}
+
+.img-container img {
+    min-width: 280px;
+    min-height: 180px;
+    max-width: 380px;
+    max-height: 280px;
+}
+
+.txt-container {
+    overflow: hidden;
+    height: 100px;
+}
+
+.panel .lead {
+    overflow: hidden;
+    height: 90px;
+}
+
+.label-float {
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    opacity: .9;
+    padding: 6px;
+    color: rgb(49, 47, 47);
+}
+
+.login-page {
+    /* border: 1px solid black; */
+    width: 40%;
+    height: 75%;
+    margin-left: 10%;
+    margin-right: 20%;
+    margin-top: 50px;
+    float: left;
+    align-content: center;
+    text-align: center;
+}
+
+.login-head {
+    margin-top: 7%;
+    margin-left: 10%;
+    color: rgb(81, 80, 80);
+}
+
+.login-botton {
+    width: 100%;
+    background-color: #0f0f0f;
+    color: rgb(74, 74, 73);
+    height: 1.8em;
+    border: 1px solid rgb(10, 10, 10);
+}
+
+.col-sm-6 {
+    background-color: black;
+}
+
+.row1 {
+    background-color: black
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+form .indicator {
+    height: 5px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+form .indicator span {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: rgb(14, 13, 13);
+    border-radius: 5px;
+}
+
+form .indicator span:nth-child(2) {
+    margin: 0 3px;
+}
+
+form .indicator span.active:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.indicator span.weak:before {
+    background-color: #ff4757;
+}
+
+.indicator span.medium:before {
+    background-color: orange;
+}
+
+.indicator span.strong:before {
+    background-color: #23ad5c;
+}
+
+form .text {
+    font-size: 15px;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 0px;
+}
+
+form .text.weak {
+    color: #ff4757;
+}
+
+form .text.medium {
+    color: orange;
+}
+
+form .text.strong {
+    color: #23ad5c;
+}
+
+.signup {
+    /* border: 2px solid rgb(22, 187, 41); */
+    width: 50%;
+    height: 75%;
+    margin-left: 5%;
+    margin-right: 20%;
+    margin-top: 7spx;
+    margin-bottom: 10%;
+    float: left;
+    align-content: center;
+    text-align: center;
+}
+
+.bookadd {
+    font-size: 30px;
+    float: left;
+    padding-left: 90%;
+    color: white;
+}
+
+.addbutton {
+    padding-left: 375px;
+}
+
+.btn-twitter {
+    background-color: #4099FF;
+    color: #fff;
+}
+
+.btn-facebook {
+    background-color: #3B5998;
+    color: #fff;
+}
+
+.btn-google-plus {
+    background-color: #d34836;
+    color: #fff;
+}
+
+.btn-twitter:hover {
+    background-color: #3088FF;
+    color: #62BBFF;
+}
+
+.btn-facebook:hover {
+    background-color: #2A4998;
+    color: #4C6BBA;
+}
+
+.btn-google-plus:hover {
+    background-color: #C23836;
+    color: #E45A58;
+}
+
+.welcome {
+    background-image: url('/images/1.jpg');
+    font-size: 5em;
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+#p2 {
+    font-family: "Brush Script MT";
+}
+
+body {
+    background-color: black;
+}

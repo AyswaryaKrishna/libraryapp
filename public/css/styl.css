@@ -1,0 +1,328 @@
+.collapse navbar-collapse li {
+    color: white;
+}
+
+.col1 {
+    border: 1px solid rgb(248, 246, 246);
+    margin-top: 15px;
+    text-align: center;
+    /* padding: 5px; */
+    color: rgb(2, 2, 2);
+    /* background-image:image-set(https://www.indianheritagehospitality.com/img/kerala-animection.gif); */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.col2 {
+    color: rgb(19, 3, 3);
+    /* border: 1px solid  black; */
+    float: left;
+    ;
+    height: 20em;
+    width: 22%;
+    /* margin-top: 5px; */
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 2em;
+    padding: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: white;
+}
+
+.col2 h4 {
+    text-align: center;
+}
+
+.col2main {
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.login-page {
+    /* border: 1px solid black; */
+    width: 40%;
+    height: 75%;
+    margin-left: 10%;
+    margin-right: 20%;
+    margin-top: 30px;
+    float: left;
+    align-content: center;
+    text-align: center;
+}
+
+.login-head {
+    margin-top: 7%;
+    margin-left: 10%;
+    color: rgb(253, 253, 253);
+}
+
+.login-botton {
+    width: 100%;
+    background-color: dodgerblue;
+    color: floralwhite;
+    height: 1.8em;
+    border: 1px solid dodgerblue;
+}
+
+.about-contant {
+    /* border: 1px solid black; */
+    width: 62em;
+    height: 100%;
+    float: left;
+}
+
+.about-contant h3 {
+    margin-top: 2em;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.about {
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 1em;
+    padding: 15px;
+    height: 100%;
+    background: black;
+    color: white;
+}
+
+.abt-img {
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-left: 65%;
+    position: relativeS;
+}
+
+.signup {
+    /* border: 2px solid rgb(22, 187, 41); */
+    width: 50%;
+    height: 75%;
+    margin-left: 5%;
+    margin-right: 20%;
+    margin-top: 7spx;
+    margin-bottom: 10%;
+    float: left;
+    align-content: center;
+    text-align: center;
+}
+
+.navnew {
+    background: rgb(42, 42, 42);
+}
+
+.contact {
+    /* background:rgb(44, 53, 57); */
+    background: rgb(42, 42, 42);
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-right: 50%;
+}
+
+.top-share {
+    margin-left: 10%;
+    margin-top: 20%;
+    float: left;
+    margin-bottom: 20%;
+}
+
+.dis-two {
+    border: 1px solid rgb(252, 251, 251);
+    width: 20em;
+    float: left;
+    margin-top: 20px;
+    /* margin-left:70px; */
+    height: 310px;
+    width: 400px;
+}
+
+.dis-two1 {
+    border: 1px solid rgb(252, 251, 251);
+    width: 20em;
+    float: left;
+    margin-top: 20px;
+    margin-left: 75px;
+    height: 310px;
+    width: 400px;
+}
+
+.dis-two a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.dis-one {
+    margin-left: 70px;
+    /* margin: 20px; */
+    color: black;
+}
+
+.district {
+    margin-left: 50px;
+}
+
+.footer {
+    border: 1px solid black;
+    /* padding: 10px; */
+    text-align: center;
+    color: blanchedalmond;
+    margin-top: 22em;
+    width: 100%;
+    height: 2em;
+    background: black;
+    margin-bottom: 0px;
+}
+
+.dis-head {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.cor2 {
+    float: left;
+}
+
+.foot {
+    /* float: left; */
+    text-align: center;
+    width: 100%;
+    background: rgb(42, 42, 42);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: white;
+}
+
+
+/* form .feild .showBtn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+form .indicator {
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+form .indicator span {
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+form .indicator span.medium {
+    margin: 0 3px;
+}
+
+form .indicator span :before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+    border-radius: 5px;
+}
+
+form .indicator span.active.weak :before {
+    background-color: #ff4757;
+}
+
+form .indicator span.active.medium :before {
+    background-color: orange;
+}
+
+form .indicator span.active.strong :before {
+    background-color: green;
+}
+
+form.text {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: -10px;
+}
+
+form.text.weak {
+    color: #ff4757;
+}
+
+form.text.medium {
+    color: orange;
+}
+
+form.text.strong {
+    color: green;
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+form .indicator {
+    height: 5px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+form .indicator span {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: lightgrey;
+    border-radius: 5px;
+}
+
+form .indicator span:nth-child(2) {
+    margin: 0 3px;
+}
+
+form .indicator span.active:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.indicator span.weak:before {
+    background-color: #ff4757;
+}
+
+.indicator span.medium:before {
+    background-color: orange;
+}
+
+.indicator span.strong:before {
+    background-color: #23ad5c;
+}
+
+form .text {
+    font-size: 15px;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 0px;
+}
+
+form .text.weak {
+    color: #ff4757;
+}
+
+form .text.medium {
+    color: orange;
+}
+
+form .text.strong {
+    color: #23ad5c;
+}

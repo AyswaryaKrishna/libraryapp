@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>
+        <%=title%>
+    </title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+                    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+                <![endif]-->
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar navbar-bright navbar-fixed-top" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                <a href="/" class="navbar-brand">Home</a>
+            </div>
+            <nav class="collapse navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                    <%for(i=0;i<nav.length;i++){%>
+                        <li>
+                            <a href="<%=nav[i].link%>">
+                                <%=nav[i].name%>
+                            </a>
+                        </li>
+                        <%}%>
+                </ul>
+                <ul class="nav navbar-right navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+                        <ul class="dropdown-menu" style="padding:12px;">
+                            <form class="form-inline">
+                                <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
+                            </form>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="masthead">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1>Signup
+
+                        <p class="lead"></p>
+                    </h1>
+                </div>
+                <div class="col-md-5">
+                    <div class="well well-lg">
+                        <div class="row">
+                            <div class="col-sm-12">
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- login page -->
+        <div class="signup">
+            <form action="index.html" onsubmit="return validate1();">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="email id">
+                        <label for="error" id="error1"></label>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <!-- strgth meter -->
+                        <div class="feild">
+                            <label for="inputPassword4">Password</label>
+
+                            <input onkeyup="trigger();" type="password" class="form-control" id="inputPassword4" placeholder="password">
+                            <!-- <span class="showBtn">show</span> -->
+                            <div class="indicator">
+                                <span class="weak"></span>
+                                <span class="medium"></span>
+                                <span class="strong"></span>
+                            </div>
+                            <div class="text">
+                            </div>
+
+
+
+                            <label for="error" id="error2"></label>
+                        </div>
+                        <!-- /stregth meter -->
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="........Apartment, studio, or floor.......">
+                    <label for="error" id="error3"></label>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="phonenumber">Phone number</label>
+                        <input type="text" class="form-control" id="inputNumber" placeholder="Phone number">
+                    </div>
+                    <!-- <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+                </div> -->
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip" placeholder="zipcode">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                  Remember me
+                </label>
+                    </div>
+                </div>
+                <div>
+                    <input class="login-botton" type="submit" value="signup"><br>
+                </div>
+                <!-- <button type="submit" class="btn btn-primary">Sign in</button> -->
+            </form>
+        </div>
+
+
+        <script src="/js/signup.js">
+        </script>
+        <script src="/js/strong.js"></script>
+</body>
+
+</html>
