@@ -8,7 +8,7 @@
 
 body {
     padding-top: 50px;
-    color: #faf6f6;
+    color: #3d3c3c;
     background-color: #fcf6f6;
 }
 
@@ -98,7 +98,7 @@ a:hover {
 
 .navbar-bright {
     background-color: #01010e;
-    color: rgb(252, 252, 252);
+    color: rgb(81, 78, 78);
     margin-bottom: 0;
     border-width: 0;
 }
