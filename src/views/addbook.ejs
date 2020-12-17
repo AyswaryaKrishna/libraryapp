@@ -94,28 +94,20 @@
     </div>
 
     <div class="addbooks">
-        <form action="books.ejs" onsubmit="return validate();">
-            <label for="name">Name of Book</label><br>
-            <input type="text" id="fd_1" placeholder="name of book"><br>
-            <label for="Author">Author    </label><br>
-            <input type="text" id="fd_2" placeholder="author"><br>
-            <label for="gener">genre      </label><br>
-            <input type="text" id="fd_3" placeholder="genre"><br>
-            <label for="publisher">Publisher  </label><br>
-            <input type="text" id="fd_4" placeholder="Publisher"><br>
-            <label for="language">language</label><br>
-            <input type="text" id="fd_5" placeholder="language"><br>
-            <label for="country of origin">country of origin</label><br>
-            <input type="text" id="fd_6" placeholder="country"><br><br>
-            <div class="input-group mb-3">
-                <div class="addbutton">
-                    <input type="file" class="form-control" id="inputGroupFile02"><br>
-                    <label class="input-group-text" for="inputGroupFile02">Upload</label><br>
+        <form method="POST" action="/admin/addbook/added">
+            <label for="title ">title</label><br> title: <input type="text " id="fd_1 " placeholder="name of book " name="title"><br>
+            <label for="author ">author    </label><br> author: <input type="text " id="fd_2 " placeholder="author " name="author"><br>
+            <label for="gener ">genre      </label><br> genre: <input type="text " id="fd_3 " placeholder="genre " name="genre"><br>
+            <div class="input-group mb-3 ">
+                <div class="addbutton ">
+                    <label class="input-group-text " for="inputGroupFile02 ">image</label><br> img :<input type="file" class="form-control " id="inputGroupFile02 " name="img"><br>
+
                 </div>
             </div>
 
-            <button class="favorite styled" type="submit">
-    submit
+
+            <button class="favorite styled " type="submit ">
+    Add
 </button>
 
 
@@ -146,7 +138,7 @@
         </div>
     </footer>
     <!-- script references -->
-    <script src="/js/addbook.js"></script>
+    <script src="/js/addbook.js "></script>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js "></script>
     <script src="/js/bootstrap.min.js "></script>

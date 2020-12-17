@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser')
 const port = process.env.PORT || 9999;
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 const nav = [{
         link: '/books',
         name: 'Books'
@@ -19,6 +22,7 @@ const authorsRouter = require('./src/routes/authorRoutes')(nav)
 const loginRouter = require('./src/routes/loginRoutes')(nav)
 const adminRouter = require('./src/routes/adminRoutes')(nav)
 
+app.use(express.urlencoded({ extended: true }))
 
 app.use(express.static('./public'))
 app.set('view engine', 'ejs')

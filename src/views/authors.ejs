@@ -113,8 +113,12 @@
                                         <div class="col-xs-9">
                                             <h4><span class="label label-default"> <%=authors[i].title%></span></h4>
                                             <h4>
-                                                <small style="font-family:courier,'new courier';" class="text-muted"><%=authors[i].joner%> <a href="/authors/<%=i%>" class="text-muted">Read More</a></small>
+                                                <small style="font-family:courier,'new courier';" class="text-muted"><%authors[i].genre%> <a href="/authors/<%=authors[i]._id%>" class="text-muted">Read More</a></small>
                                             </h4>
+                                            <a href="/admin/edit1/<%=authors[i]._id%>">Edit</a></small><br>
+                                            <a href="/admin/delete1/<%=authors[i]._id%>">Delete</a></small>
+
+
                                         </div>
                                         <div class="col-xs-3"></div>
                                     </div>

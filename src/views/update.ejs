@@ -3,10 +3,11 @@
 
 
 <head>
+
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>
-        <%=title%>
+        libraryApp
     </title>
     <meta name="generator" content="Bootply" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -62,7 +63,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
-                    <h1>Add Author
+                    <h1>update
+
 
                         <p class="lead"></p>
                     </h1>
@@ -93,28 +95,25 @@
     </div>
 
     <div class="addbooks">
-        <form method="POST" action="/admin/addauthor/added">
-            <label for="name">author</label><br> author: <input type="text" id="fd_1" placeholder="name " name="author"><br>
+        <form method="PUT" action="/books">
+            <label for="title ">title</label><br> title: <input type="text " id="fd_1 " placeholder="name of book " value="<%= bookdata.title %>" name="title"><br>
+            <label for="author ">author    </label><br> author: <input type="text " id="fd_2 " placeholder="author " value="<%= bookdata.author %>" name="author"><br>
+            <label for="gener ">genre      </label><br> genre: <input type="text " id="fd_3 " placeholder="genre " value="<%= bookdata.genre %>" name="genre"><br>
+            <div class="input-group mb-3 ">
+                <div class="addbutton ">
+                    <label class="input-group-text " for="inputGroupFile02 ">image</label><br> img :<input type="file" class="form-control " id="inputGroupFile02 " name="img"><br>
 
-            <label for="gener">genre      </label><br> genre:<input type="text" id="fd_3" placeholder="genre" name="genre"><br>
-            <label for="Books">Books  </label><br> title:<input type="text" id="fd_4" placeholder="Books" name="title"><br>
-
-            <label class="input-group-text" for="inputGroupFile02">image</label><br>
-
-            <div class="input-group mb-3">
-                <div class="addbutton">
-                    img:<input type="file" class="form-control" id="inputGroupFile02" name="img"><br>
                 </div>
             </div>
 
-            <button class="favorite styled" type="submit">
-    submit
+
+            <button class="favorite styled " type="submit" value="books" onclick="window.location='books' ">
+    Add
 </button>
 
 
         </form>
     </div>
-
 
 
 
@@ -140,7 +139,7 @@
         </div>
     </footer>
     <!-- script references -->
-    <script src="/js/addbook.js"></script>
+    <script src="/js/addbook.js "></script>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js "></script>
     <script src="/js/bootstrap.min.js "></script>

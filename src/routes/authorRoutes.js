@@ -1,55 +1,69 @@
 const express = require('express');
 const authorsRouter = express.Router();
 
+const authordata = require('../model/authordata');
+
 function router(nav) {
-    var authors = [{
-            title: "USA",
-            author: "Sidney Sheldon",
-            joner: "Suspense",
-            img: "sid.jpg"
-        },
-        {
-            title: "ENGLAND",
-            author: "J. K. Rowling",
-            joner: "Harry Potter, Fantastic Beasts",
-            img: "JK.jpg"
-        },
-        {
-            title: "BRAZIL",
-            author: "paulo coelho",
-            joner: " lyricist and novelist",
-            img: "PAU.jpg"
-        }
-    ]
+    // var authors = [{
+    //         title: "USA",
+    //         author: "Sidney Sheldon",
+    //         genre: "Suspense",
+    //         img: "sid.jpg"
+    //     },
+    //     {
+    //         title: "ENGLAND",
+    //         author: "J. K. Rowling",
+    //         genre: "Harry Potter, Fantastic Beasts",
+    //         img: "JK.jpg"
+    //     },
+    //     {
+    //         title: "BRAZIL",
+    //         author: "paulo coelho",
+    //         genre: " lyricist and novelist",
+    //         img: "PAU.jpg"
+    //     }
+    // ]
     authorsRouter.get('/', function(req, res) {
-        res.render('authors', {
-                nav: [{
-                        link: '/authors',
-                        name: 'Authors'
-                    }
+        // booksRouter.get('/', function(req, res) {
+        authordata.find()
+            .then(function(authors) {
+                res.render('authors', {
+                    nav: [{
+                            link: '/authors',
+                            name: 'Authors'
+                        }
 
-                ],
-                title: 'Library App',
-                authors
+                    ],
+                    title: 'Library App',
+                    authors
 
-            })
-            // res.end();
+                });
+                // res
+
+            });
+
+        // res.end();
     });
 
     authorsRouter.get('/:id', function(req, res) {
         const id = req.params.id;
-        res.render('author', {
-            nav: [{
-                    link: '/authors',
-                    name: 'Authors'
-                }
+        authordata.findOne({ _id: id })
+            .then(function(author) {
+                res.render('author', {
+                    nav: [{
+                            link: '/authors',
+                            name: 'Authors'
+                        }
 
-            ],
+                    ],
 
-            title: 'Library App',
-            author: authors[id]
+                    title: 'Library App',
+                    author
 
-        })
+                })
+
+            })
+
 
     })
     return authorsRouter;
